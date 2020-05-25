@@ -1,0 +1,747 @@
+/* HTML */
+html{
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px.  asi cada 1 Rem son 10px **/
+}
+
+/* Body */
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+/* Global */
+section a{
+    text-decoration: none;
+    color: #000000;
+}
+img{
+    max-width: 100%;
+    
+}
+.BotonAzul{
+    text-decoration: none;
+    background-color: #0150AF;
+    color: #FFFFFF;
+    padding: 1.2rem 5rem;
+    border-radius: 5px;
+    align-content: center;
+    justify-content: center;
+}
+.BotonAzulCrecera{
+    text-decoration: none;
+    background-color: #0150AF;
+    color: #FFFFFF;
+    padding: 1.2rem 5rem;
+    border-radius: 5px;
+    align-content: center;
+    justify-content: center;
+}
+.BotonAzul-imagen{
+    display: flex;
+    text-decoration: none;
+    background-color: #0150AF;
+    color: #FFFFFF;
+    padding: 1.2rem 5rem;
+    border-radius: 5px;
+    align-content: center;
+    justify-content: center;
+}
+.BotonAzul-imagen img{
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+@media (max-width: 320px) {
+    .BotonAzul{
+        font-size: 1.2rem;
+    }
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.negritas{
+    font-weight: 700;
+}
+.no-margin{
+    margin: 0;
+}
+h1{
+    font-size: 5.8rem;
+    margin-left: 1rem;
+    color: #FFFFFF;
+    line-height: 6rem;
+}
+
+h2{
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 6rem;
+}
+
+h4{
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 0;
+}
+@media (max-width: 768px) {
+    h4{
+        line-height: 1;
+        font-size: 2rem;
+    }
+}
+.h4muchotexto{
+    line-height: 1;
+    font-size: 2rem;
+}
+h5{
+    font-size: 2rem;
+    color: #7e7e7e;
+}
+.centrartexto{
+    text-align: center;
+}
+.centrarElemento{
+    text-align: center;
+}
+.alinearderecha{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+/* Menú de encabezado */
+header{
+    width: 100%;
+    height: 10%;
+    background-color: #A88B09;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+@media (max-width: 940px) {
+    header label{
+        display: block;
+    }
+}
+header label:hover {
+    cursor: pointer;
+    background-color: rgb(138, 114, 9);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+@media (max-width: 940px) {
+    .menu{
+        display: block;
+        position: absolute;
+        background-color: #A88B09;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.3s;
+    }
+}
+.menu ul{
+    margin: 0 5rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+@media (max-width: 940px) {
+    .menu ul{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+}
+.menu li{
+    padding: 1rem 0;
+    border-radius: .5rem;
+    transition: background-color 0.2s linear 0s;
+}
+.menu li:hover{
+    background-color: rgb(138, 114, 9);
+}
+@media (max-width: 940px) {
+    .menu li{
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu img{
+    cursor: pointer;
+    width: 9rem;
+}
+@media (max-width: 940px) {
+    .menu img{
+        width: 12rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 940px) {
+    #btn-menu:checked ~ .menu{
+        margin-left: 0;
+    }
+    .imagenmenu{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* FIN de menu encabezado */
+
+/* Inicio Diseño de Cartas */
+
+.contenedor-cartas{
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.contenedor-cartas .carta{
+    width: 36rem;
+    height: 47rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 2rem;
+    text-align: center;
+    transition: all 0.25s;
+}
+@media (max-width: 768px) {
+    .contenedor-cartas .carta{
+        height: 52rem;
+    }
+}
+/*------------Noticias------------*/
+.contenedor-cartas .cartaNoticia{
+    width: 36rem;
+    height: 35rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 0 1rem;
+    text-align: left;
+    transition: all 0.25s;
+    background-color: #FCFCFC;
+}
+@media (max-width: 1386px) {
+    .contenedor-cartas .cartaNoticia{
+        height: 34rem;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .contenedor-cartas .cartaNoticia{
+        height: 34rem;
+    }
+}
+
+@media (max-width: 403px) {
+    .contenedor-cartas .cartaNoticia{
+        height: 38rem;
+    }
+}
+
+@media (max-width: 310px) {
+    .contenedor-cartas .cartaNoticia{
+        height: 40rem;
+    }
+}
+.contenedor-cartas .cartaNoticia:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+.contenedor-cartas .cartaNoticia img{
+    margin: 1rem;
+    width: 34rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+.contenedor-cartas .cartaNoticia a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+}
+.contenedor-cartas .cartaNoticia p{
+    text-align: left;
+    margin: 2rem 1rem;
+}
+.contenedor-cartas .cartaNoticia h4{
+    margin: 0 1rem;
+}
+/*-------------Fin de Noticias---------------*/
+
+
+
+.contenedor-cartas .carta:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-cartas .carta img{
+    width: 36rem;
+    height: 22rem;
+}
+.contenedor-cartas .carta a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.contenedor-cartas .carta p{
+    margin: 2rem 1rem;
+}
+.contenedor-cartas .cartagde{
+    width: 56rem;
+    height: 55rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 2rem;
+    text-align: center;
+    transition: all 0.25s;
+}
+@media (max-width: 768px) {
+    .contenedor-cartas .cartagde{
+        height: 69rem;
+    }
+}
+.contenedor-cartas .cartagde:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.contenedor-cartas .cartagde img{
+    width: 56rem;
+    height: 33rem;
+}
+.contenedor-cartas .cartagde a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.contenedor-cartas .cartagde p{
+    margin: 2rem 1rem;
+}
+
+/* FIN DE DISEÑO DE CARTAS */
+
+/* INICIO DISEÑO DE BARRAS INSCRIBETE */
+.contenedor-grid{
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 2fr repeat(1, 2fr);
+    column-gap: 1rem;
+}
+@media (max-width: 940px) {
+    .contenedor-grid{
+        display: block;
+    }
+}
+.fondobarra{
+    margin: 1rem 0;
+    background-image: url(../img/becas.jpg);
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: soft-light;
+    background-position: center center;
+    background-size: cover;
+    height: 18rem;
+    min-height: 5rem;
+}
+.fondo2{
+    background-image: url(../img/libro.jpg);
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: soft-light;
+}
+.barragrande{
+    margin-top: 1rem;
+    background-image: url(../img/inscripcion.jpg);
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: soft-light;
+    background-position: center center;
+    background-size: cover;
+    height: 37rem;
+    min-height: 5rem;
+}
+@media (max-width: 940px) {
+    .barragrande{
+        height: 18rem;
+        background-position: center -8rem;
+    }
+    .fondobarra{
+        background-position: center 33rem;
+    }
+}
+@media (max-width: 768px) {
+    .barragrande{
+        height: 24rem;
+        background-position: center center;
+    }
+    .fondobarra{
+        height: 24rem;
+        background-position: center center;
+    }
+}
+.textobarras{
+    margin-left: 1rem;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    max-width: 50%;
+    text-align: center;
+}
+.titulobarras{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #FFFFFF;
+    font-size: 2rem;
+    max-width: 50%;
+    text-align: center;
+}
+.botonbarras{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 50%;
+    height: 5rem;
+}
+@media (max-width: 768px) {
+    .botonbarras{
+        margin-top: 2rem;
+        margin-left: 1rem;
+        display: block;
+        width: 100%;
+    }
+    .titulobarras{
+        line-height: 1.4;
+        text-align: left;
+    }
+    .textobarras{
+        text-align: left;
+    }
+}
+/* FIN DE DISEÑO DE BARRAS INSCRIBETE */
+
+/* Paginas internas */
+.fondo{
+    background-position: center -30rem;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    min-height: 30rem;
+}
+@media (max-width: 1138px) {
+    .fondo{
+        background-position: center center;
+    }
+}
+@media (max-width: 768px) {
+    .fondo{
+        background-position: center center;
+    }
+}
+
+
+
+/* INICIO SECCION FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #A88B09;
+    color: #FFFFFF;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+}
+footer p{
+    line-height: 1.4;
+}
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+footer img{
+    max-width: 10rem;
+    width: 10rem;
+}
+@media (max-width: 768px) {
+    footer{
+        display: block;
+    }
+    footer img{
+        margin: 1rem;
+        width: 5rem;
+    }
+}
+/* FIN DE FOOTER */
+
+
+/*  INICIO DE PÁGINA PRINCIPAL   */
+
+.imgBanner{
+    width: 100%;
+    height: 70vh;
+}
+@media (max-width: 940px) {
+    .imgBanner{
+        height: 40vh;
+    }
+}
+@media (max-width: 768px) {
+    .imgBanner{
+        height: 30vh;
+    }
+}
+
+/* Seccion Campus */
+.seccion-campus{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+}
+.BarraAzul{
+    position: relative;
+    display: inline-flex;
+    z-index: 0;
+    background-color: #000A3F;
+    width: 100%;
+    height: 63rem;
+}
+.imgCampus{
+    position: relative;
+    z-index: 1;
+    width: 65%;
+    height: 65rem;
+    top: -1rem;
+    left: 1rem;
+}
+.seccionAzul{
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 35%;
+}
+.seccionAzul p{
+    line-height: 1;
+    color: #FFFFFF;
+    text-align: center;
+}
+.seccionAzul a{
+    position:absolute;
+    bottom:5px;
+    right:10px;
+}
+.titulo{
+    padding-top: 1rem;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.titulo span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1045px) {
+    .seccion-campus{
+        display: block;
+    }
+    .imgCampus{
+        position: absolute;
+        width: 100%;
+        height: 45rem;
+        top: 0;
+        left: 0;
+    }
+    .seccionAzul{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        bottom: 0;
+    }
+    .seccionAzul a{
+        position:absolute;
+        bottom:default;
+        right: 4rem;
+        bottom: 6rem;
+    }
+}
+
+@media (max-width: 712px) {
+    .seccion-campus{
+        display: block;
+    }
+    .imgCampus{
+        position: absolute;
+        width: 100%;
+        height: 45rem;
+        top: 0;
+        left: 0;
+    }
+    .seccionAzul{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        bottom: 0;
+    }
+    .seccionAzul p{
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+    .seccionAzul a{
+        margin-top: 5rem;
+        position:absolute;
+        bottom:default;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 415px) {
+    .imgCampus{
+        height: 39rem;
+    }
+}
+/* Fin Seccion Campus */
+
+/*  FIN DE PÁGINA PRINCIPAL */
+
+/* Página Nosotros */
+.nosotros span{
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 500;
+}
+.seccion-mision{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+} 
+@media (max-width: 768px) {
+    .seccion-mision{
+        display: block;
+    }
+}
+.seccion-mision p{
+    text-align: center;
+    margin: 2rem 2rem;
+}
+.seccion-valores{
+    text-align: center;
+    line-height: 2.2;
+}
+.lineafinal::after{
+    content: '';
+    display: block;
+    height: 0.2rem;
+    background-color: #707070;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.seccion-1-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+@media (max-width: 768px) {
+    .seccion-1-2{
+        display: block;
+    }
+    .seccion-1-2 img{
+        max-width: 100%;
+        max-height: 45rem;
+    }
+    .alinearderecha{
+        margin-top: 2rem;
+        display: block;
+    }
+    .BotonAzulCrecera{
+        display: block;
+        text-align: center;
+    }
+}
+.seccion-1-2 img{
+    width: 100%;
+}
+.imagenLateralizq{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-end: 2;
+}
+.textoLateralder{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.imagenLateralder{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-end: 2;
+}
+.textoLateralizq{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.seccion-organigrama{
+    display: flex;
+}
+
+.organigrama{
+    width: 70%;
+    height: 100%;
+}
+.organigrama img{
+    border-radius: 2rem;
+}
+.Descargas-documentos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.Descargas-documentos a{
+    text-align: center;
+    text-decoration: none;
+    background-color: #0150AF;
+    color: #FFFFFF;
+    margin: .3rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 700px) {
+    .seccion-organigrama{
+        display: block;
+    }
+    .organigrama{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .Descargas-documentos a{
+        margin: 0;
+    }
+}
+/* Fin de Página Nosotros */
